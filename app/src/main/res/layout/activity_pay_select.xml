@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wt.xwttravel.activity.PaySelectActivity"
+    android:background="#fff">
+
+
+
+    
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="一共支付"
+            android:textColor="#555"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1234元"
+            android:textColor="#555"
+            android:textSize="30dp"
+            android:layout_marginBottom="40dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用以下支付方式支付"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#888"/>
+
+        <include layout="@layout/divider_line"/>
+        <LinearLayout
+            android:id="@+id/btnAlipay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/alipay_logo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:textColor="#555"
+                android:text="支付宝"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_line"/>
+        <LinearLayout
+            android:id="@+id/btnWechatPay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/wechat_pay_logo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:textColor="#555"
+                android:text="微信支付"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_line"/>
+        <LinearLayout
+            android:id="@+id/btnUnionPay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/unionpay_logo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:textColor="#555"
+                android:text="银联卡"/>
+
+        </LinearLayout>
+        <include layout="@layout/divider_line"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#296"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_back"/>
+
+        <Button
+
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_black"/>
+
+        <AbsoluteLayout
+            android:layout_marginTop="10dp"
+            android:background="#22ffffff"
+            android:layout_marginLeft="49dp"
+            android:layout_width="1dp"
+            android:layout_height="30dp">
+
+        </AbsoluteLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="支付您的订单"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:layout_marginLeft="60dp"/>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_orange"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="确认支付"
+        android:textColor="#fff"
+        android:textSize="16dp"/>
+
+</RelativeLayout>

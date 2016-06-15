@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000"
+    tools:context="com.wt.xwttravel.fragment.SortbySelectFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <AbsoluteLayout
+        android:id="@+id/bottomSpace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9000"></AbsoluteLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/listLayout"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingTop="10dp">
+            <Button
+                android:id="@+id/btnSuggest"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_white"
+                android:gravity="left|center_vertical"
+                android:text="推荐排序"
+                android:textColor="#555" />
+
+            <include layout="@layout/divider_line" />
+
+            <Button
+                android:id="@+id/btnNear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_white"
+                android:gravity="left|center_vertical"
+                android:text="离我最近"
+                android:textColor="#555" />
+
+            <include layout="@layout/divider_line" />
+
+            <Button
+                android:id="@+id/btnPriceLow"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_white"
+                android:gravity="left|center_vertical"
+                android:text="价格最低"
+                android:textColor="#555" />
+
+            <include layout="@layout/divider_line" />
+
+            <Button
+                android:id="@+id/btnPriceHigh"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_white"
+                android:gravity="left|center_vertical"
+                android:text="价格最高"
+                android:textColor="#555" />
+
+            <include layout="@layout/divider_line" />
+
+            <Button
+                android:id="@+id/btnCheap"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_white"
+                android:gravity="left|center_vertical"
+                android:text="优惠最多"
+                android:textColor="#555" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_below="@id/listLayout"
+                android:alpha="0.3"
+                android:src="@drawable/element_shadow" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:alpha="0.3"
+        android:src="@drawable/element_shadow" />
+
+
+</RelativeLayout>

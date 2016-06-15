@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wt.xwttravel.activity.SuggestActivity">
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imgBackground"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/testlargepic"-->
+        <!--android:scaleType="center"/>-->
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="android.support.v4.view.ViewPager"
+        android:id="@+id/viewPager"
+        android:visibility="visible"/>
+
+
+    <!--android:background="#ddefae69"-->
+    <FrameLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#a000"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_back"/>
+
+        <Button
+
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_black"/>
+
+        <AbsoluteLayout
+            android:layout_marginTop="10dp"
+            android:background="#22ffffff"
+            android:layout_marginLeft="49dp"
+            android:layout_width="1dp"
+            android:layout_height="30dp">
+
+            </AbsoluteLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="推荐"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:layout_marginLeft="60dp"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_suggest_shadow"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TITLE"
+            android:textColor="#fff"
+            android:textSize="24dp"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/txtSubTitle"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="SUBTITLESUBTITLESUBTITLE"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:layout_marginTop="40dp"
+            />
+
+        <TextView
+            android:id="@+id/txtSold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="已有1000人参加"
+            android:textSize="14dp"
+            android:layout_gravity="right|bottom"
+            />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textColor="#fff"
+            android:textSize="24dp"
+            android:text="￥1000"
+            android:layout_gravity="right|bottom"
+            />
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

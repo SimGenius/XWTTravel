@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            fresco:placeholderImage="@color/divider_light_gray_darker"
+            fresco:actualImageScaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_gravity="left|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#de74">
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥100"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:text="起"
+                android:textSize="14dp"
+                android:textColor="#fff"
+                android:gravity="bottom"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSold"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@drawable/list_item_preview_count_background"
+            android:layout_gravity="top|right"
+            android:text="16人已报名"
+            android:textSize="12dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:paddingLeft="7dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="30dp"/>
+        
+        </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:text="活动标题活动标题活动标题活动标题活动标题活动标题活动标题"/>
+
+    <TextView
+        android:id="@+id/txtSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="12dp"
+        android:textColor="#666"
+        android:singleLine="true"
+        android:text="地区地区地区地区|活动种类数量|适用年龄"/>
+
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.wt.xwttravel.activity.PaySuccessActivity">
+
+
+    <FrameLayout
+
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_bar"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_back"/>
+
+        <Button
+
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_black"/>
+
+        <AbsoluteLayout
+            android:layout_marginTop="10dp"
+            android:background="#22ffffff"
+            android:layout_marginLeft="49dp"
+            android:layout_width="1dp"
+            android:layout_height="30dp">
+
+        </AbsoluteLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="支付成功"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:layout_marginLeft="60dp"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/icon_pay_success"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="成功支付9999元"
+        android:textSize="18dp"
+        android:textColor="#555"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="12dp"
+        android:textColor="#888"
+        android:text="这是您的订单信息"/>
+
+    <include layout="@layout/divider_line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></WebView>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/element_shadow"
+            android:alpha="0.5"
+            android:layout_gravity="top"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/element_shadow"
+            android:alpha="0.5"
+            android:rotation="180"
+            android:layout_gravity="bottom"/>
+
+
+
+    </FrameLayout>
+
+    <include layout="@layout/divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/orange_normal"
+            android:background="@drawable/btn_white"
+            android:text="地图"/>
+
+        <AbsoluteLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider_light_gray_darker2"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"></AbsoluteLayout>
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/orange_normal"
+            android:background="@drawable/btn_white"
+            android:text="联系景区"/>
+
+        <AbsoluteLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider_light_gray_darker2"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"></AbsoluteLayout>
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/orange_normal"
+            android:background="@drawable/btn_white"
+            android:text="分享"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_line" />
+
+</LinearLayout>

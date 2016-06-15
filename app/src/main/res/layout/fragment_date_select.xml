@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="640dp"
+    android:layout_gravity="top"
+    android:background="#0000"
+    android:gravity="top"
+    tools:context="com.wt.xwttravel.activity.DateSelectActivity">
+
+
+
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9000"
+        android:id="@+id/bottomSpace"></AbsoluteLayout>
+
+    <RelativeLayout
+        android:id="@+id/contentArea"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="#0000">
+
+        <FrameLayout
+            android:id="@+id/dateBar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ccc"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/btnLastMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_black"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="10月"
+                android:textColor="#555"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btnNextMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:background="@drawable/btn_black"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="12月"
+                android:textColor="#555"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtYearMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="2016年 12月"
+                android:textColor="#555"
+                android:textSize="14dp" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/weekBar"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@id/dateBar"
+            android:background="#ccc"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="日"
+                android:textColor="#555"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="一"
+                android:textColor="#555"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="二"
+                android:textColor="#555"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="三"
+                android:textColor="#555"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="四"
+                android:textColor="#555"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="五"
+                android:textColor="#555"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="六"
+                android:textColor="#555"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_below="@id/weekBar"
+            android:background="#fff"
+            android:numColumns="7"></GridView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_below="@id/gridView"
+            android:alpha="0.3"
+            android:src="@drawable/element_shadow" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:alpha="0.3"
+            android:src="@drawable/element_shadow" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

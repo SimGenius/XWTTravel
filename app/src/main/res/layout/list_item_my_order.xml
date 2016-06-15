@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/list_press">
+
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/default_pic"
+        android:scaleType="centerCrop"/>
+
+
+    <com.wt.xwttravel.util.CircleImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@color/orange_normal"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="35dp"
+        />
+
+    <TextView
+
+        android:id="@+id/txtOrderStatus"
+        android:layout_width="44dp"
+        android:layout_height="18dp"
+        android:text="待付款"
+        android:textSize="12dp"
+        android:background="@color/orange_normal"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        />
+
+
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥99999"
+        android:textSize="18dp"
+        android:textColor="@color/orange_normal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="云栖社区在线培训《游族网络：如何运维千台以上游戏云服务器》"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:layout_toRightOf="@id/img"
+        android:layout_toLeftOf="@id/txtOrderStatus"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人数:3人 出行日期:2016-12-12"
+        android:textColor="#888"
+        android:textSize="12dp"
+        android:layout_toRightOf="@id/img"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

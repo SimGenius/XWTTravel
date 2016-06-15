@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#fff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <view
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            class="com.wt.xwttravel.util.CircleImageView"
+            android:src="#ddd"
+            android:id="@+id/photo" />
+        <TextView
+            android:id="@+id/txtNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Nickname"
+            android:textSize="14dp"
+            android:textColor="#000"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016年12月22日"
+            android:textColor="#888"
+            android:textSize="12dp"
+            android:layout_gravity="right|center_vertical"
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:text="【饿了么】亲爱的会员用户，感谢您对饿了么的支持，春节将至，饿骑士们也要和家人团聚了，饿配送将在2月6日至2月15日停止运营，为了保障亲们的权益，特将您的会员卡有效期延长10天，有效期至2016年3月22日，来年饿了么继续和您一起拼！"
+        android:textSize="14dp"
+        android:textColor="#555"
+        android:layout_gravity="center_vertical"/>
+
+
+
+</LinearLayout>

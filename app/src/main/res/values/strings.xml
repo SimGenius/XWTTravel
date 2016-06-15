@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XWT Travel</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_city_select">CitySelectActivity</string>
+    <string name="title_activity_personal_center">PersonalCenterActivity</string>
+
+    <color name="background_light_gray">#f9f9f9</color>
+    <!-- <color name="divider_light_gray">#c8c8c8</color> -->
+    <color name="divider_light_gray">#eee</color>
+    <color name="divider_light_gray_darker">#ddd</color>
+    <color name="divider_light_gray_darker2">#e8e8e8</color>
+    <color name="orange_normal">#f83</color>
+    <color name="orange_dark">#d62</color>
+    <color name="title_bar">#c222</color>
+    <color name="black">#000000</color>
+    <color name="title_bar_2">#4e4e4e</color>
+    <color name="title_bar_red">#c0483d</color>
+    <color name="title_bar_red_lighter">#d0584d</color>
+
+    <string name="title_activity_suggest">SuggestActivity</string>
+    <string name="title_activity_detail_home">DetailHomeActivity</string>
+    <string name="title_activity_detail_more">DetailMoreActivity</string>
+    <string name="title_activity_date_select">DateSelectActivity</string>
+    <string name="title_activity_pay_confirm">PayConfirmActivity</string>
+    <string name="title_activity_pay_select">PaySelectActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_my_order">MyOrderActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+</resources>

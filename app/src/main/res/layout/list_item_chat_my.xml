@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="10dp">-->
+
+        <!--<com.wt.xwttravel.util.CircleImageView-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:src="@drawable/default_pic" />-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="60dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:textSize="16dp"-->
+            <!--android:background="@drawable/chat_bubble_a"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="【中国联通温馨提示】尊敬的五星级客户，您好！中国联通现已为您免费开通10010客服热线快速接入服务，按“0”直接进入人工服务，感谢您使用中国联通！" />-->
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="15dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:layout_marginLeft="55dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:rotation="45"-->
+            <!--android:scaleY="1"-->
+            <!--android:src="#ddd"></ImageView>-->
+
+    <!--</FrameLayout>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            fresco:roundAsCircle="true"
+            fresco:placeholderImage="@drawable/default_pic"/>
+
+        <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="20dp"
+        android:rotation="45"
+        android:scaleY="1"
+        android:src="#fa6"
+        android:layout_gravity="right"></ImageView>
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/chat_bubble_b"
+            android:padding="10dp"
+            android:layout_gravity="right"
+            android:text="Message"
+            android:textColor="#fff" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

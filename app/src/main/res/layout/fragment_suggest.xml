@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.wt.xwttravel.fragment.SuggestFragment"
+    android:background="@color/background_light_gray"
+    android:id="@+id/baseLayout">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/optionBar"
+        android:layout_width="match_parent"
+        android:layout_below="@id/topBar"
+        android:layout_height="40dp"
+        android:background="#fff">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分类"
+                    android:textColor="#555"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/arrow_down"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCategory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/btn_white"/>
+
+            <AbsoluteLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:background="@color/divider_light_gray"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"></AbsoluteLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="排序"
+                    android:textColor="#555"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/arrow_down"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSort"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/btn_white"/>
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出行日期"
+                    android:textColor="#555"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/arrow_down"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="2dp"/>
+                </LinearLayout>
+
+            <Button
+                android:id="@+id/btnDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/btn_white"/>
+
+            <AbsoluteLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/divider_light_gray"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"></AbsoluteLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/optionBar"
+        android:divider="@color/divider_light_gray_darker2"
+        android:dividerHeight="5dp"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/optionBar"
+        android:id="@+id/addArea"
+        android:background="#0000"
+        android:orientation="vertical"></LinearLayout>
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_light_gray"
+        android:layout_below="@id/optionBar">
+
+    </AbsoluteLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="40dp" android:background="@drawable/style_listview_common">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="NAME"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:textColor="#555"/>
+
+    <TextView
+        android:id="@+id/txtCount"
+        android:layout_width="wrap_content"
+        android:minWidth="20dp"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:background="@drawable/element_circle_corner_rect_orange"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:textSize="12dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="12"/>
+
+    <AbsoluteLayout
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider_light_gray"/>
+
+</RelativeLayout>

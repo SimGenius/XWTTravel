@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 14
+    buildToolsVersion '23.0.2'
+    defaultConfig {
+        applicationId "com.wt.xwttravel"
+        minSdkVersion 14
+        targetSdkVersion 14
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/universal-image-loader/universal-image-loader-1.9.5.jar')
+    compile files('libs/zxing-core-3.2.1.jar')
+    compile files('libs/pushservice-4.6.2.39.jar')
+    compile 'com.android.support:support-v4:23.0.0'
+    compile 'com.facebook.fresco:fresco:0.9.0'
+    compile 'com.android.support:support-v13:23.2.0'
+}

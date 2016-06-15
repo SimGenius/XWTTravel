@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wt.xwttravel.activity.CitySelectActivity"
+    android:background="@color/background_light_gray">
+
+
+    <FrameLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="50dp"
+        android:background="@color/title_bar_red">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="取消"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:background="@drawable/btn_black"
+                android:textSize="12dp"
+                android:layout_gravity="right|center_vertical"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前城市 - 北京"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#fff"/>
+
+    </FrameLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:background="#fff"
+        android:divider="@color/divider_light_gray_darker2"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_press"
+        android:layout_below="@id/topBar">
+
+
+
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/background_light_gray"
+    android:text="已开通城市"
+    android:textSize="12dp"
+    android:paddingLeft="30dp"
+    android:gravity="left|bottom"
+    android:paddingTop="30dp"
+    android:paddingBottom="10dp"
+    android:textColor="#555"/>
